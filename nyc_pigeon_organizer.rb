@@ -4,10 +4,10 @@ def nyc_pigeon_organizer(data)
   data.each do |key, value|
   value.map do |values, name|
   name.each do |names|
-    binding.pry
     hash[names] ||= {}
     hash[names][key]||= []
     hash[names][key] << values.to_s
+    binding.pry
   end
   end
   end 
